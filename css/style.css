@@ -1,0 +1,490 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 100.01%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+    line-height: 1.42857143;
+	overflow-x: hidden;
+	font-weight: 400;
+	font-size: 14px;
+	color: #333;
+}
+
+*{
+	outline: none !important;
+}
+
+.container{
+	max-width: 1130px;
+	padding: 0 15px;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+:focus{
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	color: #000;
+}
+p{
+	margin: 0 0 1.5em;
+	color: inherit;
+}
+p a:hover{
+	text-decoration: underline;
+}
+strong{
+	font-weight: 700;
+}
+sub, sup{
+	font-size: 65%;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	line-height: normal;
+}
+
+.invite_card{
+	padding-top: 40px;
+	padding-bottom: 65px;
+}
+.invite_card_inner{
+	width: 100%;
+	color: #fff;
+	margin: auto;
+	max-width: 700px;
+	text-align: center;
+	border-radius: 15px;
+	padding: 2px 20px 12px;
+	border:5px solid rgba(0, 117, 178, 0.61);
+    background-color: rgba(0, 117, 178, 0.72);
+    -webkit-box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.40);
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.40);
+}
+.invite_card_inner h1{
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	text-decoration: underline;
+}
+.invite_card_inner h1, .invite_card_inner h2, .invite_card_inner h3{
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, .50);
+}
+
+.invite_card_inner h2{
+	font-size: 36px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.invite_card_inner h3{
+	font-size: 30px;
+	font-weight: 400;
+	font-style: italic;
+	margin-bottom: 25px;
+}
+.invite_card_inner h4{
+	font-size: 24px;
+	font-weight: 400;
+	padding: 0 15px 10px;
+	border-bottom: 1px solid #2f2f2f;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.invite_card_btn{
+	margin-bottom: 20px;
+}
+.invite_card_btn button{
+	color: #fff;
+	cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 3px;
+    background: #3bb131;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.2);
+	font-family: 'Source Sans Pro', sans-serif;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.20);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.20);
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+}
+.invite_card_inner .invite_card_btn button:not(:hover){
+    -webkit-animation: rocking 2s infinite cubic-bezier(0, 0, 0.58, 1);
+    -o-animation: rocking 2s infinite cubic-bezier(0, 0, 0.58, 1);
+    animation: rocking 2s infinite cubic-bezier(0, 0, 0.58, 1);
+}
+.invite_card_btn button:hover{
+	background-color: rgb(24, 177, 49);
+	-webkit-box-shadow: inset 0 2px 2px 0 rgb(255 255 255 / 22%), 0 233px 233px 0 rgb(255 255 255 / 12%) inset;
+	box-shadow: inset 0 2px 2px 0 rgb(255 255 255 / 22%), 0 233px 233px 0 rgb(255 255 255 / 12%) inset;
+}
+
+@-webkit-keyframes rocking{
+	0%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	25%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	50%{
+		-webkit-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		transform: rotate(2deg);
+	}
+	75%{
+		-webkit-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		transform: rotate(-2deg);
+	}
+	100%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+@-o-keyframes rocking{
+	0%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	25%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	50%{
+		-webkit-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		transform: rotate(2deg);
+	}
+	75%{
+		-webkit-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		transform: rotate(-2deg);
+	}
+	100%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+@-moz-keyframes rocking{
+	0%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	25%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	50%{
+		-webkit-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		transform: rotate(2deg);
+	}
+	75%{
+		-webkit-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		transform: rotate(-2deg);
+	}
+	100%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+@keyframes rocking{
+	0%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	25%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	50%{
+		-webkit-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		transform: rotate(2deg);
+	}
+	75%{
+		-webkit-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		transform: rotate(-2deg);
+	}
+	100%{
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+
+.footer{
+	line-height: normal;
+	text-align: center;
+	margin-top: 100px;
+	font-weight: 400;
+	font-size: 12px;
+}
+.footer p{	
+	margin-bottom: 14px;
+}
+.footer-links{
+	
+}	
+.footer-links{
+	padding-top: 12px;
+}
+
+.popup{
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	height: 100%;
+	padding: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.4);
+	overflow: auto;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all .25s linear;
+	-o-transition: all .25s linear;
+	transition: all .25s linear;
+}
+.popup-inner{
+	width: 100%;
+	margin: auto;
+	background: #fff;
+	max-width: 720px;
+	padding: 40px 30px;
+	position: relative;
+	border-radius: 10px;
+	-webkit-transition: all .25s linear;
+	-o-transition: all .25s linear;
+	transition: all .25s linear;
+	-webkit-transform: translateY(-40px);
+	-ms-transform: translateY(-40px);
+	-o-transform: translateY(-40px);
+	transform: translateY(-40px);
+}
+.popup.active{
+	opacity: 1;
+	visibility: visible;
+}
+.popup.active .popup-inner{
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	transform: translateY(0px);	
+}
+.popup-close{
+	background-color: transparent !important;
+	position: absolute;
+	border: none;
+	right: -20px;
+	z-index: 5;
+	top: -15px;
+}
+.popup-inner{
+	text-align: center;
+}
+.popup-inner h2{
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.3em;
+	margin-bottom: 30px;
+}
+.popup-inner .invite_card_btn{
+	margin-bottom: 0;
+	padding-top: 20px;
+}
+.form-group{
+	margin-bottom: 10px;
+}
+.form-group input{
+	width: 100%;
+	font-size: 16px;
+    text-align: left;
+    padding: 12px 18px;
+	border-radius: 5px;
+    padding-left: 45px;
+	background-color: #fff;
+	background-position: 10px;
+	background-repeat: no-repeat;
+	border: 1px solid rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 1px 2px rgba(130, 137, 150, 0.23), 0 1px 0 rgba(255, 255, 255, 0.95);
+	box-shadow: inset 0 1px 2px rgba(130, 137, 150, 0.23), 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+.form-user{
+	background-image: url('../image/name.png');
+}
+.form-email{
+	background-image: url('../image/email.png');
+}
+
+.progress{
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.10);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.10);
+	background-color: rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-bar{
+	background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+	-webkit-background-size: 40px 40px;
+	background-size: 40px 40px;
+	-webkit-animation: progressbarstripes 2s linear infinite reverse;
+	-o-animation: progressbarstripes 2s linear infinite reverse;
+	animation: progressbarstripes 2s linear infinite reverse;
+	-webkit-transition: width .25s ease, height .25s ease, font-size .25s ease;
+	-o-transition: width .25s ease, height .25s ease, font-size .25s ease;
+	transition: width .25s ease, height .25s ease, font-size .25s ease;
+	color: #fff;
+    text-align: center;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+	height: 35px;
+	font-size: 14px;
+	line-height: 36px;
+	background-color: rgb(24, 177, 49);
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+@-webkit-keyframes progressbarstripes {
+	from{
+		background-position:40px 0
+	}
+	to{
+		background-position:0 0
+	}
+}
+@-o-keyframes progressbarstripes {
+	from{
+		background-position:40px 0
+	}
+	to{
+		background-position:0 0
+	}
+}
+@-moz-keyframes progressbarstripes {
+	from{
+		background-position:40px 0
+	}
+	to{
+		background-position:0 0
+	}
+}
+@keyframes progressbarstripes {
+	from{
+		background-position:40px 0
+	}
+	to{
+		background-position:0 0
+	}
+}
+
+/*respnsive*/
+
+@media screen and (max-width: 767px) {
+	.invite_card_inner h1{
+		font-size: 40px;
+	}
+	.invite_card_inner h2{
+		font-size: 26px;
+	}
+	.invite_card_inner h3{
+		font-size: 23px;
+	}
+	.invite_card_btn button{
+		font-size: 22px;
+		padding: 10px 18px;
+	}
+	.invite_card_inner h4{
+		font-size: 14px;
+	}
+	.invite_card {
+	    padding-top: 24px;
+	    padding-bottom: 40px;
+	}
+	.invite_card_inner{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.footer{
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.invite_card_inner h2, .invite_card_inner h3 {
+	    font-size: 20px;
+	}
+	.invite_card_btn button{
+		font-size: 18px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.invite_card_inner h1 {
+	    font-size: 36px;
+	}
+}

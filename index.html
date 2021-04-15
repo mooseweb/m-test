@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="css/style.css" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+	<title>Automate</title>
+</head>
+		                   
+<body>
+	<div id="wrapper">
+		<main class="page-content">
+			<div class="container">
+				<div class="invite_card">
+					<div class="invite_card_inner">
+						<h1>INVITATION:</h1>
+						<h2>Learn How We Will Get Your Amazon Store To $50,000/Month In 8 Months....</h2>
+						<h3>(Or We Will Work For FREE Until You Get There!)</h3>
+
+						<div class="invite_card_btn">
+							<button type="button" onclick="popupShow('popup')">Send The Case Study Here >></button>
+						</div>
+
+						<h4>(Before you apply, let us send you a FREE video case study so you can see what we do)</h4>
+					</div>
+					<!-- /.invite_card_inner -->
+				</div>
+				 <!-- /.invite_card --> 
+			</div>
+			<!-- /.container -->
+		</main>
+		<!-- /.page-content -->
+
+		<div class="popup" id="popup">
+			<div class="popup-inner">
+				<button type="button" onclick="popupClose('popup')" class="popup-close"><img src="image/closemodal.webp" alt="close" /></button>
+
+				<div class="progress">
+					<div class="progress-bar" style="width: 50%;">Step 1/2</div>
+				</div>
+				<!-- /.progress -->
+
+				<h2>Tell Us Where To Send Your Free Case Study</h2>
+
+				<form action="/">
+					<div class="form-group">
+						<input type="text" class="form-user" />
+					</div>
+					<!-- /.form-group -->
+					<div class="form-group">
+						<input type="email" class="form-email" />
+					</div>
+					<!-- /.form-group -->
+
+					<div class="invite_card_btn">
+						<button type="submit">Send The Case Study Here >></button>
+					</div>
+				</form>
+			</div>
+			<!-- /.popup-inner -->
+		</div>
+		<!-- /.modal -->
+
+		<footer class="footer">
+			<div class="container">
+				<p>This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
+				<p>This site is not a part of the Google website or Google Inc. Additionally, This site is NOT endorsed by Google in any way. GOOGLE is a trademark of GOOGLE, Inc.</p>
+				<p>Meridian Automation LLC ("Meridian Automation") and this training and opportunity is in no way affiliated with or endorsed by Amazon.com, Inc or Walmart Inc.</p>
+				<p>IMPORTANT: Earnings and Legal Disclaimers</p>
+				<p>Earnings and income representations made by Meridian Automation and their advertisers/sponsors/members/owners are aspirational statements only of your earnings potential. The success of Meridian Automations, testimonials and other examples used are exceptional, non-typical results and are not intended to be and are not a guarantee that you or others will achieve the same results. Individual results will always vary and yours will depend entirely on your individual capacity, work ethic, business skills and experience, level of motivation, diligence in applying the Meridian Automation Programs, the economy, the normal and unforeseen risks of doing business, and other factors.</p>
+				<p>The Meridian Automation Programs, and Meridian Automations individually, are not responsible for your actions. You are solely responsible for your own moves and decisions and the evaluation and use of our products and services should be based on your own due diligence. You agree that Meridian Automation are not liable to you in any way for your results in using our products and services. See our Terms & Conditions for our full disclaimer of liability and other restrictions.</p>
+
+				<div class="footer-links"><p><strong><a href="#">Privacy Policy</a> - <a href="#">Terms of Service</a> - <a href="#">Earnings Disclaimer</a> - <a href="#">CCPA</a></strong></p></div>
+				<p>© 2021 Meridian Automation LLC All Rights Reserved</p>
+			</div>
+			<!-- /.container -->
+		</footer>
+		<!-- /.footer -->
+	</div>
+	<!-- /#wrapper -->
+
+
+	<script type="text/javascript">
+		function popupShow(id){
+			var popup = document.getElementById(id);
+			popup.classList.add('active');
+		}
+
+		function popupClose(id){
+			var popup = document.getElementById(id);
+			popup.classList.remove('active');
+		}
+	</script>
+</body>
+</html>
