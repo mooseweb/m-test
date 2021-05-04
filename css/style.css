@@ -110,6 +110,13 @@ h1, h2, h3, h4, h5, h6{
 	border-bottom: 1px solid #2f2f2f;
 	font-family: 'Source Sans Pro', sans-serif;
 }
+.invite_card_inner h5{
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 15px 10px;
+	border-bottom: 1px solid #2f2f2f;
+	font-family: 'Source Sans Pro', sans-serif;
+}
 .invite_card_btn{
 	margin-bottom: 20px;
 }
